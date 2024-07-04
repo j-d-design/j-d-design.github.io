@@ -174,7 +174,7 @@ h1
 
 .logos-gallery button:hover
 {
-    box-shadow: 0px 0px 10px 1px rgba(253,255,252,0.1);
+    cursor: pointer;
 }
 
 .logos-gallery button i
@@ -212,7 +212,7 @@ h1
 
 .photos-gallery button:hover
 {
-    box-shadow: 0px 0px 10px 1px rgba(253,255,252,0.1);
+    cursor: pointer;
 }
 
 .photos-gallery button i
