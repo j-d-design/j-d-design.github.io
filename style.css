@@ -124,7 +124,7 @@ h1
 
 .links
 {
-    display: flex;
+    display: none;
     list-style-type: none;
     padding: 0;
     justify-content: space-evenly;
