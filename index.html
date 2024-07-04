@@ -9,7 +9,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
@@ -17,42 +17,112 @@
 
 <body>
 
+<div class="container">
+
     <main>
-
-        <header>
-            
-                <img src="logo.svg" href="index.html"/>
-
-            <nav>
-
-                <button class="burger-menu"><i class="fa-solid fa-bars fa-2x"></i></button>
-                    
-                <ul class="navigation-list">
-
-                    <li><a class="btn one" href="index.html">HOME</a></li>
-                    <li><a class="btn two" href="aboutme.html">ABOUT ME</a></li>
-                    <li><a class="btn three" href="work.html">MY WORK</a></li>
-                    
-                </ul>
-
-            </nav>
-
-        </header>
 
         <section class="home">
 
-        <div class="content">
-            <div class="text-container">
-                <h1>Welcome on my website</h1>
-                <p>I'm Dominik Jaworski. Great to see You here!</p>
+            <div class="wrapper">
+                
+                <div class="img-container">
+                    <img class="logo-main" src="logo-edit.svg"/>
+                </div>  
+                <div class="text-container">
+                    <h1>Welcome on my website</h1>
+                    <p>Great to see You here!</p>
+                </div> 
             </div>
-        
-            <img class="logo" src="logo.svg"/>
-        </div>
 
         </section>
 
-    </main>  
+        <section class="about">
+
+            <div class="wrapper">
+                
+                <div class="img-container">
+                <img class="profile" src="profile.jpg"/>
+                </div>
+                <div class="text-container">
+    
+                <h1>Hi, my name is Dominik</h1>
+                <p> I'm multi-skilled graphic and website designer with a strong focus on brand identity, typography, layout and attention to detail. Passionate about nature and architecture photography along with photo edition.
+    
+                <ul class="links">
+    
+                    <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                    <li><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+                    <li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+                    <li><i class="fa-solid fa-envelope fa-2x"></i></li>
+    
+                </ul>
+    
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="work">
+
+            <div class="wrapper">
+                    
+                <div class="logo-component">
+
+                    <div class="text-container">
+                                
+                        <h1>Logos</h1>
+                    
+                    </div>
+
+                    <div class="logos-gallery">
+
+                        <button onclick="previousLogo()"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
+
+                        <div class="img-container">
+                        
+                        <img class="logo" id="logo"/>
+                        
+                        </div>
+
+                        <button onclick="nextLogo()"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
+                        
+                    </div>
+                        
+                </div>
+
+                <div class="photo-component">
+
+                    <div class="text-container">
+                        <h1>Photos</h1>
+                    </div>
+
+                    <div class="photos-gallery">
+
+                        <button onclick="previousPhoto()"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
+
+                        <div class="img-container">
+                        
+                            <img-comparison-slider class="comparison">
+                            <img slot="first" class="photo" id="before"/>
+                            <img slot="second" class="photo" id="after"/>
+                            </img-comparison-slider>
+                        
+                        </div>
+
+                        <button onclick="nextPhoto()"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
 
 <script src="script.js"></script>
 
