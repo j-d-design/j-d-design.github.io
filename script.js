@@ -1,5 +1,5 @@
 var imagesURL = ["photos/1.jpg", "photos/1-1.jpg", "photos/2.jpg", "photos/2-2.jpg", "photos/3.jpg", "photos/3-3.jpg", "photos/4.jpg", "photos/4-4.jpg", "photos/5.jpg", "photos/5-5.jpg", "photos/6.jpg", "photos/6-6.jpg", "photos/7.jpg", "photos/7-7.jpg", "photos/8.jpg", "photos/8-8.jpg", "photos/9.jpg", "photos/9-9.jpg", "photos/10.jpg", "photos/10-10.jpg"];
-var logosURL = ["logos/1.png", "logos/2.png", "logos/3.png"];
+var logosURL = ["logos/logo#1visual.jpg", "logos/logo#2visual.jpg", "logos/logo#3visual.jpg"];
 var images = imagesURL.length;
 var logos = logosURL.length;
 let x = 0;
